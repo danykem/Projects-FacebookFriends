@@ -1,0 +1,30 @@
+<div class="row pt-1 mb-2">
+    <div class="col-md-12 text-center text-primary">
+      <h2 class="h5">
+        <i class="far fa-address-card fa-lg text-primary"></i>
+        <span>Liste des utilisateurs</span>
+      </h2>
+    </div>
+</div>
+  <hr>
+  
+ 
+ <table class="table table-hover">
+   <thead>
+     <tr>
+       <th>nom</th>
+       <th>prenom</th>
+       <th>login</th>
+       <th>email</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let user of users">
+       <td>{{ user.nom }}</td>
+       <td>{{ user.prenom }}</td>
+       <td>{{ user.login }}</td>
+       <td>{{ user.email }}</td>
+     </tr>
+   </tbody>
+ </table>
+ 
